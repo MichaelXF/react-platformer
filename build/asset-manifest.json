@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/react-platformer/static/css/main.ba674613.chunk.css",
-    "main.js": "/react-platformer/static/js/main.6fc8755b.chunk.js",
-    "main.js.map": "/react-platformer/static/js/main.6fc8755b.chunk.js.map",
-    "runtime-main.js": "/react-platformer/static/js/runtime-main.fbd212fb.js",
-    "runtime-main.js.map": "/react-platformer/static/js/runtime-main.fbd212fb.js.map",
-    "static/js/2.6e539cce.chunk.js": "/react-platformer/static/js/2.6e539cce.chunk.js",
-    "static/js/2.6e539cce.chunk.js.map": "/react-platformer/static/js/2.6e539cce.chunk.js.map",
-    "static/js/3.4317e915.chunk.js": "/react-platformer/static/js/3.4317e915.chunk.js",
-    "static/js/3.4317e915.chunk.js.map": "/react-platformer/static/js/3.4317e915.chunk.js.map",
-    "index.html": "/react-platformer/index.html",
-    "static/css/main.ba674613.chunk.css.map": "/react-platformer/static/css/main.ba674613.chunk.css.map",
-    "static/js/2.6e539cce.chunk.js.LICENSE.txt": "/react-platformer/static/js/2.6e539cce.chunk.js.LICENSE.txt"
+    "main.css": "/react-platformer/build/static/css/main.ba674613.chunk.css",
+    "main.js": "/react-platformer/build/static/js/main.6fc8755b.chunk.js",
+    "main.js.map": "/react-platformer/build/static/js/main.6fc8755b.chunk.js.map",
+    "runtime-main.js": "/react-platformer/build/static/js/runtime-main.427c79f9.js",
+    "runtime-main.js.map": "/react-platformer/build/static/js/runtime-main.427c79f9.js.map",
+    "static/js/2.6e539cce.chunk.js": "/react-platformer/build/static/js/2.6e539cce.chunk.js",
+    "static/js/2.6e539cce.chunk.js.map": "/react-platformer/build/static/js/2.6e539cce.chunk.js.map",
+    "static/js/3.4317e915.chunk.js": "/react-platformer/build/static/js/3.4317e915.chunk.js",
+    "static/js/3.4317e915.chunk.js.map": "/react-platformer/build/static/js/3.4317e915.chunk.js.map",
+    "index.html": "/react-platformer/build/index.html",
+    "static/css/main.ba674613.chunk.css.map": "/react-platformer/build/static/css/main.ba674613.chunk.css.map",
+    "static/js/2.6e539cce.chunk.js.LICENSE.txt": "/react-platformer/build/static/js/2.6e539cce.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fbd212fb.js",
+    "static/js/runtime-main.427c79f9.js",
     "static/js/2.6e539cce.chunk.js",
     "static/css/main.ba674613.chunk.css",
     "static/js/main.6fc8755b.chunk.js"
