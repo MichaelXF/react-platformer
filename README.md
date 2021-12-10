@@ -1,3 +1,49 @@
+# React Platformer
+
+A simple 2d platformer game made with the React library and HTML5 Canvas.
+
+**[Try the website here.](https://michaelxf.github.io/react-platformer/build/)**
+
+`https://michaelxf.github.io/react-platformer/build/`
+
+## Gameplay
+
+You can run, slide, attack with your player.
+
+- Use `[A]` and `[D]` keys or `[Left]` and `[Right]` arrow keys to run left and right respectively
+
+- Use `[W]` or `[Spacebar]` to jump
+
+- Use `[S]` to crouch
+
+- Use `[S]` while running to slide
+
+- Use `[Mouse1]` to attack
+
+- Use `[Mouse1]` while airborne to do an air attack
+
+- Use `[G]` to toggle displaying hitboxes
+
+## Enemies
+
+Red dots will fly across the screen. If you get hit by one these your character will get knocked down. If you attack (`[Mouse1]`) you can deflect the enemy.
+
+## Features
+
+- [x] Collision
+- [x] Smooth camera movement
+- [x] Spritesheet loading
+- [x] Player animations
+- [x] Mouse and keyboard input
+
+# Copyrighted Material
+
+[The player sprites are copyrighted.](https://deadrevolver.itch.io/pixel-prototype-player-sprites)
+
+# License
+
+MIT License.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
