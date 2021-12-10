@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-platformer/build/static/css/main.ba674613.chunk.css",
-    "main.js": "/react-platformer/build/static/js/main.6fc8755b.chunk.js",
-    "main.js.map": "/react-platformer/build/static/js/main.6fc8755b.chunk.js.map",
+    "main.js": "/react-platformer/build/static/js/main.21a764cb.chunk.js",
+    "main.js.map": "/react-platformer/build/static/js/main.21a764cb.chunk.js.map",
     "runtime-main.js": "/react-platformer/build/static/js/runtime-main.427c79f9.js",
     "runtime-main.js.map": "/react-platformer/build/static/js/runtime-main.427c79f9.js.map",
     "static/js/2.6e539cce.chunk.js": "/react-platformer/build/static/js/2.6e539cce.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.427c79f9.js",
     "static/js/2.6e539cce.chunk.js",
     "static/css/main.ba674613.chunk.css",
-    "static/js/main.6fc8755b.chunk.js"
+    "static/js/main.21a764cb.chunk.js"
   ]
 }

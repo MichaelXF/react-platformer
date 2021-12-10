@@ -2,6 +2,8 @@ import ImageEffects from "./ImageEffects";
 import Sprite from "./Sprite";
 import SpriteSheetManager from "./SpriteSheetManager";
 
+const SPRITE_PATH = process.env.PUBLIC_URL + "/sprites/";
+
 export default class SpriteSheet {
   constructor(imgPath, info, spriteSheetManager, isTopLevel = true) {
     if (
@@ -24,7 +26,7 @@ export default class SpriteSheet {
     this.image = imgPath instanceof Image ? imgPath : new Image();
 
     if (typeof imgPath === "string") {
-      this.image.src = "/sprites/" + imgPath;
+      this.image.src = SPRITE_PATH + imgPath;
     }
 
     this.image.addEventListener("error", (e) => {

@@ -2,13 +2,15 @@
 
 A simple 2d platformer game made with the React library and HTML5 Canvas.
 
+![React Platformer](https://raw.githubusercontent.com/MichaelXF/react-platformer/master/images/react-platformer.png)
+
 **[Try the website here.](https://michaelxf.github.io/react-platformer/build/)**
 
 `https://michaelxf.github.io/react-platformer/build/`
 
 ## Gameplay
 
-You can run, slide, attack with your player.
+You can run, slide, and attack with your player.
 
 - Use `[A]` and `[D]` keys or `[Left]` and `[Right]` arrow keys to run left and right respectively
 
@@ -23,6 +25,8 @@ You can run, slide, attack with your player.
 - Use `[Mouse1]` while airborne to do an air attack
 
 - Use `[G]` to toggle displaying hitboxes
+
+- Use `[-]` and `[=]` to change the camera's zoom
 
 ## Enemies
 
