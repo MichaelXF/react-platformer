@@ -21,6 +21,7 @@ export default class Player extends GameObject {
 
     this.ledgeHang = false;
 
+    this.doubleJumped = false;
     /**
      * - `0` = Left
      * - `1` = Right
@@ -252,6 +253,9 @@ export default class Player extends GameObject {
   }
 
   jump() {
+    if (this.doubleJumped && !this.ledgeHang) {
+      return
+    }
     this.gravityTick = 0;
     this.velocityX = 0;
 
@@ -267,6 +271,7 @@ export default class Player extends GameObject {
     if (!this.onGround) {
       this.setAnimation("roll");
       this.ledgeHang = false;
+      this.doubleJumped = true;
 
       this.velocityY = -4.85;
     } else {
@@ -391,6 +396,7 @@ export default class Player extends GameObject {
     }
 
     if (this.onGround) {
+      this.doubleJumped = false
       if (!wasOnGround) {
         var y = Math.floor(this.y);
         if (y !== this.lastLandY) {
