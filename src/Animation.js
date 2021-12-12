@@ -9,6 +9,7 @@ export default class Animation {
     disableController,
     idle,
     size,
+    timeout,
   }) {
     this.sprite = sprite;
     this.frames = frames;
@@ -23,5 +24,7 @@ export default class Animation {
 
     this.idle = !!idle;
     this.size = size;
+
+    this.timeout = timeout;
   }
 }
