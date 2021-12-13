@@ -21,6 +21,8 @@ export default class Player extends GameObject {
 
     this.ledgeHang = false;
 
+    this.doubleJumped = false;
+    this.frictionValue = 0;
     /**
      * - `0` = Left
      * - `1` = Right
@@ -80,10 +82,11 @@ export default class Player extends GameObject {
         frames: [0, 1, 2],
         speed: 90,
         after: "slide_transition",
-        disableController: true,
+        disableController: false,
         size: [1, 0.6],
         yOffset: -0.4,
         xOffset: [0.3, 0.2],
+        timeout: false
       }),
       slide_transition: new Animation({
         sprite: "player_slide",
@@ -252,6 +255,9 @@ export default class Player extends GameObject {
   }
 
   jump() {
+    if (this.doubleJumped && !this.ledgeHang) {
+      return
+    }
     this.gravityTick = 0;
     this.velocityX = 0;
 
@@ -267,6 +273,7 @@ export default class Player extends GameObject {
     if (!this.onGround) {
       this.setAnimation("roll");
       this.ledgeHang = false;
+      this.doubleJumped = true;
 
       this.velocityY = -4.85;
     } else {
@@ -276,8 +283,14 @@ export default class Player extends GameObject {
   }
 
   slide() {
-    this.velocityX = 3 * (this.facing == 0 ? -1 : 1);
-
+    if (this.animations.slide.timeout) {
+      //prevent double sliding
+      return
+    }
+    this.animations.slide.timeout = true;
+    setTimeout(() => {
+      this.animations.slide.timeout = false;
+    }, 1500)
     this.setAnimation("slide");
   }
 
@@ -389,8 +402,16 @@ export default class Player extends GameObject {
     } else {
       this.gravityTick = 0;
     }
-
+    if (!this.animationName.includes("slide")) {
+      this.frictionValue = 0;
+    } else {
+      this.velocityX = Math.sqrt(-0.07 * this.frictionValue + 3) * (this.facing == 0 ? -1 : 1);
+      this.frictionValue++
+    }
     if (this.onGround) {
+      //resetting movement checks
+      this.doubleJumped = false
+
       if (!wasOnGround) {
         var y = Math.floor(this.y);
         if (y !== this.lastLandY) {
